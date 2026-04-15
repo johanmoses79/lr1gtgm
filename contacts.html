@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Контакти RadioWave — зв'яжіться з нами.">
+    <meta name="keywords" content="контакти, зворотній зв'язок, RadioWave">
+    <meta name="author" content="RadioWave Team">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="Content-Language" content="uk">
+    <meta property="og:title" content="Контакти — RadioWave">
+    <meta property="og:description" content="Форма зворотного зв'язку RadioWave.">
+    <meta property="og:type" content="website">
+    <title>Контакти — RadioWave</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>🎙 RadioWave</h1>
+    <p>Зв'язатися з нами</p>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="index.html">Головна</a></li>
+        <li>
+            <a href="stations.html">Станції ▾</a>
+            <ul>
+                <li><a href="stations.html#pop">Поп</a></li>
+                <li><a href="stations.html#jazz">Джаз</a></li>
+                <li><a href="stations.html#rock">Рок</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="contacts.html">Контакти ▾</a>
+            <ul>
+                <li><a href="#form">Форма зворотного зв'язку</a></li>
+                <li><a href="#map">Де ми знаходимось</a></li>
+            </ul>
+        </li>
+    </ul>
+</nav>
+
+<main>
+
+    <section id="form">
+        <h2>Форма зворотного зв'язку</h2>
+        <p>Заповніть форму нижче, щоб зв'язатися з редакцією RadioWave.</p>
+
+        <form class="contact-form" action="#" method="post">
+
+            <label for="name">Ім'я та прізвище*</label>
+            <input type="text" id="name" name="name" placeholder="Іван Петренко"
+                   required maxlength="80">
+
+            <label for="email">Email*</label>
+            <input type="email" id="email" name="email" placeholder="user@example.com"
+                   required>
+
+            <label for="tel">Телефон*</label>
+            <input type="tel" id="tel" name="tel" placeholder="+38 (050) 123-45-67"
+                   required pattern="^\+?[\d\s\(\)\-]{7,20}$">
+
+            <label for="site">Ваш сайт (необов'язково)</label>
+            <input type="url" id="site" name="site" placeholder="https://example.com">
+
+            <label for="datetime">Зручний час для зворотного дзвінка*</label>
+            <input type="datetime-local" id="datetime" name="datetime" required>
+
+            <label for="age">Ваш вік</label>
+            <input type="number" id="age" name="age" min="10" max="100" step="1"
+                   placeholder="25">
+
+            <label for="station">Улюблена станція*</label>
+            <select id="station" name="station" required>
+                <option value="">— Оберіть станцію —</option>
+                <option value="pop">Pop Wave FM</option>
+                <option value="jazz">Jazz Night Radio</option>
+                <option value="rock">Rock Station UA</option>
+            </select>
+
+            <label for="message">Повідомлення*</label>
+            <textarea id="message" name="message" rows="5"
+                      maxlength="500" required
+                      placeholder="Напишіть ваше повідомлення (до 500 символів)..."></textarea>
+
+            <button type="submit">Надіслати</button>
+        </form>
+    </section>
+
+    <section id="map">
+        <h2>Де ми знаходимось</h2>
+        <article>
+            <p>
+                Наша студія розташована за адресою:<br>
+                <strong>Харків, просп. Науки, 14, офіс 301</strong>
+            </p>
+            <p class="muted">Години роботи: Пн–Пт 9:00–18:00</p>
+            <p>
+                Телефон: <a href="tel:+380501234567">+38 (050) 123-45-67</a><br>
+                Email: <a href="mailto:radiowave@example.com">radiowave@example.com</a>
+            </p>
+        </article>
+    </section>
+
+    <a class="back-link" href="index.html">← Повернутись на головну</a>
+
+</main>
+
+<footer>
+    <p>
+        © 2026 RadioWave. Всі права захищені. |
+        <a href="index.html">Головна</a> |
+        <a href="stations.html">Станції</a> |
+        <a href="contacts.html">Контакти</a>
+    </p>
+    <p class="muted">Харків, Україна | radiowave@example.com | +38 (050) 123-45-67</p>
+</footer>
+
+</body>
+</html>
